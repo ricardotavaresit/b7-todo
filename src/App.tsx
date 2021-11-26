@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Container, Area, Header } from './App.styles';
 import { Item } from './types/Item';
 import { ListItem } from './components/ListItem'; 
+import { AddArea } from './components/AddArea'; 
 
 const App = () => {
   const [list, setList] = useState<Item[]>([
@@ -16,7 +17,7 @@ const App = () => {
         </Header>
 
         {/* Region for add a new task */}
-
+        <AddArea />
 
 
         {/* list of tasks */}
