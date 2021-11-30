@@ -1,17 +1,25 @@
 import { Container } from './styles';
-import { Item } from './../../types/Item';
 import { useState } from 'react';
 
-type Props = {
-    item: Item
-}
-
+ 
 export const AddArea = ( ) => {
+
+    const [inputText, setInputText] = useState('');
+
+    const handleKeyUp = () => {
+
+    } 
 
     return(
         <Container  >
-          <div> Min. 47</div>
+            <div className="image">+</div>
+            <input 
+                type="text" 
+                placeholder="Add a task"
+                value={inputText}
+                onChange={e => setInputText(e.target.value)}
+                onKeyUp={handleKeyUp}
+            />
         </Container>
     )
-
 }
