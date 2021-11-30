@@ -19,16 +19,9 @@ const App = () => {
         {/* Region for add a new task */}
         <AddArea />
 
-
-        {/* list of tasks */}
-
-
         {list.map( (item, index) => (
           <ListItem key={index} item={item}/>
         ))}
-
-
-
 
         <h1>To Do B7WEB</h1>
       </Area>
